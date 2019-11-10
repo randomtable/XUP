@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Xabal</a>
+</nav>
+
+<div class="container">
+
+<br />
+
+<div class="card bg-light mb-3">
+  <div class="card-header">Xabal test unit</div>
+  <div class="card-body">
+    <h5 class="card-title">Testing delle funzioni della Libreria Xabal.</h5>
+    <p class="card-text">Xabal è una libreria che ti permette di semplificare lo sviluppo delle tue applicazioni. Xabal non è un programma, bensì un paradigma. Il risultato delle operazioni eseguite con Xabal sono riportate a fondo pagina.</p>
+    
+    <div class="card bg-light mb-3">
+  <div class="card-header">Primo test Xabal</div>
+  <div class="card-body">
+    <h5 class="card-title">Funzione di check</h5>
+    <p class="card-text">Premendo il pulsante, Xabal deve rispondere "it works!"</p>
+    <button onclick="Xabal('test')" type="button" class="btn btn-primary btn-lg btn-block">Attiva primo test</button>
+  </div>
+</div>
+
+<div class="card bg-light mb-3">
+  <div class="card-header">Invio di dati a Xabal</div>
+  <div class="card-body">
+    <h5 class="card-title">Funzione di test per invio di dati a Xabal</h5>
+    <p class="card-text">Inserisci la stringa da riprodurre, Xabal ti risponderà.</p>
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">@</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input id="string" type="text" class="form-control" placeholder="Stringa">
+      </div>
+    </div>
+    <button onclick="XabalString('string', document.getElementById('string').value)" type="button" class="btn btn-primary btn-lg btn-block">Invia Stringa</button>
+  </div>
+</div>
+
+<div class="card bg-light mb-3">
+  <div class="card-header">Elaborazione di Funzioni con Xabal</div>
+  <div class="card-body">
+    <h5 class="card-title">Funzione di test per elaborazione di operazioni</h5>
+    <p class="card-text">Inserisci un'operazione matematica e Xabal la eseguirà.</p>
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">@</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input id="operation" type="text" class="form-control" placeholder="Operazione">
+      </div>
+    </div>
+    <button onclick="XabalOperations('operations', encodeURIComponent(document.getElementById('operation').value))" type="button" class="btn btn-primary btn-lg btn-block">Invia operazione</button>
+  </div>
+</div>
+
+<div class="card bg-light mb-3">
+  <div class="card-header">Cifratura con Xabal</div>
+  <div class="card-body">
+    <h5 class="card-title">Funzione di cifratura</h5>
+    <p class="card-text">Inserisci una stringa e i parametri per cifrarla.</p>
+    
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">@</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input id="testo" type="text" class="form-control" placeholder="Testo">
+      </div>
+    </div>
+    
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">@</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input id="chiave" type="text" class="form-control" placeholder="Chiave">
+      </div>
+    </div>
+    
+    <button onclick="XabalEncrypt('encrypt', document.getElementById('testo').value, document.getElementById('chiave').value)" type="button" class="btn btn-primary btn-lg btn-block">Invia operazione</button>
+  </div>
+</div>
+
+<div class="card bg-light mb-3">
+  <div class="card-header">Decifra testo con Xabal</div>
+  <div class="card-body">
+    <h5 class="card-title">Funzione di decifrazione</h5>
+    <p class="card-text">Inserisci una stringa cifrata e i parametri per decifrarla.</p>
+    
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">@</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input id="testocifrato" type="text" class="form-control" placeholder="Testo Cifrato">
+      </div>
+    </div>
+    
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">@</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input id="chiavedec" type="text" class="form-control" placeholder="Chiave">
+      </div>
+    </div>
+    
+    <button onclick="XabalDecrypt('decrypt', document.getElementById('testocifrato').value, document.getElementById('chiavedec').value)" type="button" class="btn btn-primary btn-lg btn-block">Invia operazione</button>
+  </div>
+</div>
+
+<div class="card bg-light mb-3">
+  <div class="card-header">Elaborazione di Funzioni con Xabal</div>
+  <div class="card-body">
+    <h5 class="card-title">Funzione di test per elaborazione di codice</h5>
+    <p class="card-text">Inserisci codice PHP e Xabal lo eseguirà.</p>
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">@</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input id="code" type="text" class="form-control" placeholder="Codice">
+      </div>
+    </div>
+    <button onclick="XabalCode('code', encodeURIComponent(document.getElementById('code').value))" type="button" class="btn btn-primary btn-lg btn-block">Invia Codice</button>
+  </div>
+</div>
+
+<div class="card bg-light mb-3">
+  <div class="card-header">Funzione di Sanificazione</div>
+  <div class="card-body">
+    <h5 class="card-title">Xabal effettua un'operazione di 'sanitize' avanzata</h5>
+    <p class="card-text">Inserisci la stringa da sanificare, Xabal ti restituirà la stringa sanificata.</p>
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">@</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input id="tosanitize" type="text" class="form-control" placeholder="Stringa">
+      </div>
+    </div>
+    <button onclick="XabalSanitize('sanitize', document.getElementById('tosanitize').value)" type="button" class="btn btn-primary btn-lg btn-block">Sanifica Stringa</button>
+    <div id="xabalresult"></div>
+  </div>
+</div>
+    
+  </div>
+</div>
+
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+function Xabal($param) {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("xabalresult").innerHTML =
+            this.responseText;
+       }
+    };
+xhttp.open("POST", "https://loremitalia.altervista.org/xabal.php", true);
+xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xhttp.send("function=" + $param);
+}
+    </script>
+    
+    <script>
+function XabalString($param, $string) {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("xabalresult").innerHTML =
+            this.responseText;
+       }
+    };
+xhttp.open("POST", "https://loremitalia.altervista.org/xabal.php", true);
+xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xhttp.send("function=" + $param + "&string=" + $string);
+}
+    </script>
+    
+    <script>
+function XabalOperations($param, $operation) {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("xabalresult").innerHTML =
+            this.responseText;
+       }
+    };
+xhttp.open("POST", "https://loremitalia.altervista.org/xabal.php", true);
+xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xhttp.send("function=" + $param + "&operation=" + $operation);
+}
+    </script>
+    
+    <script>
+function XabalEncrypt($param, $testo, $chiave) {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("xabalresult").innerHTML =
+            this.responseText;
+       }
+    };
+xhttp.open("POST", "https://loremitalia.altervista.org/xabal.php", true);
+xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xhttp.send("function=" + $param + "&testo=" + $testo + "&chiave=" + $chiave);
+}
+    </script>
+    
+    <script>
+function XabalDecrypt($param, $testo, $chiave) {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("xabalresult").innerHTML =
+            this.responseText;
+       }
+    };
+xhttp.open("POST", "https://loremitalia.altervista.org/xabal.php", true);
+xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xhttp.send("function=" + $param + "&testo=" + $testo + "&chiave=" + $chiave);
+}
+    </script>
+    
+    <script>
+function XabalCode($param, $code) {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("xabalresult").innerHTML =
+            this.responseText;
+       }
+    };
+xhttp.open("POST", "https://loremitalia.altervista.org/xabal.php", true);
+xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xhttp.send("function=" + $param + "&code=" + $code);
+}
+    </script>
+    
+    <script>
+function XabalSanitize($param, $string) {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("xabalresult").innerHTML =
+            this.responseText;
+       }
+    };
+xhttp.open("POST", "https://loremitalia.altervista.org/xabal.php", true);
+xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xhttp.send("function=" + $param + "&string=" + $string);
+}
+    </script>
+  </body>
+</html>
