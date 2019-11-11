@@ -26,4 +26,13 @@ E' possibile visualizzare nei sorgenti come è stato sviluppato il tutto.
 
 # Client
 
-Dal momento che 
+Dal momento che il Client può essere sviluppato in qualunque linguaggio che supporti chiamate POST, si è deciso di svilupparne di due tipi.
+
+Il primo in HTML+Javascript, mentre il secondo in VB.NET
+
+Questo tipo di scelta è dettata dalle infinite possibilità di questo Modello e dai tipi di approcci che possono essere presi.
+
+Il Client HTML+Javascript è presente online qui:
+
+https://loremitalia.altervista.org/xabal.html
+
