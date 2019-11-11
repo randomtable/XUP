@@ -14,3 +14,7 @@ In questo progetto il Server è stato programmato in PHP per la sua diffusione e
 
 #### Xabal è un Modello, non un Software
 
+Nel "Modello Xabal" il Server riceve una chiamata POST ed esegue la sanitizzazione di qualunque dato in ingresso.
+
+Nella chiamata in ingresso deve essere presente il parametro "function"; tramite il parametro "function" il Server esegue la funzione oggetto della chiamata del Client.
+
