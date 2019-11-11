@@ -46,6 +46,8 @@ La response delle varie funzioni è visualizzata a fondo pagina, in un "div" spe
   
 Come è possibile osservare, la chiamata non genera nessun tipo di post-back e la pagina non ha bisogno di ricaricarsi, andando a creare l'esperienza di navigazione come presente in librerie o framework più complessi come Angular o React.
 
+Si noti che, nel caso in cui la response sia un HTML, questo sarà renderizzato dal browser, proprio come i framework sopracitati.
+
 Scaricando, invece, il sorgente in VB.NET si può notare come effettivamente il Codice sia ripetuto per ogni funzione, ed andrà a cambiare solo la stringa POST passata al Server.
 
 Questo Modello, quindi, presenta molteplici vantaggi, tra i quali:
@@ -54,4 +56,20 @@ Questo Modello, quindi, presenta molteplici vantaggi, tra i quali:
 - Possibilità di sviluppare di più, con meno codice
 - E' possibile utilizzare i linguaggi già conosciuti
 - Utilizzo delle risorse ridottissimo, rispetto ad altri tipi di Servizi Web.
+
+Si menziona adesso, quindi, il concetto di "Nodo Xabal".
+
+Un "Nodo Xabal" è un Server, e il Client sarà in grado di chiamare una funzione per eseguire una determinata operazione.
+
+In questo progetto è presentato un Server in PHP in quanto moltissimi servizi di hosting hanno un piano di sottoscrizione gratuita.
+
+Nel voler pensare anche al lato economico per lo sviluppatore che vuole approcciare tale Modello di Sviluppo, un hosting può incidere pesantemente a seconda delle necessità e delle esigenze.
+
+Per ovviare a questo problema, il "Nodo Xabal" è stato programmato in PHP (e il Client in HTML sopra linkato riporta ad un hosting gratuito), in maniera tale da poter abbattere i costi di sviluppo di un'applicazione (anche complessa).
+
+Molti servizi di hosting gratuiti, però, hanno delle limitazioni pesanti per quanto riguarda le operazioni o la velocità di esecuzione dei vari comandi.
+
+Pertanto, la scelta del PHP serve anche a dotare lo sviluppatore di un vero e proprio "bilanciamento di carico".
+
+Lo sviluppatore potrebbe decidere di caricare un Nodo su un hosting e un ulteriore Nodo su un altro hosting, di modo da avere sempre una ridondanza del proprio applicativo.
 
