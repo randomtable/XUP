@@ -101,3 +101,8 @@ Si potrebbero progettare delle "tute intelligenti" (o "rendere intelligenti" le 
 
 Si pensi, inoltre, ad una eventuale calamità.
 
+Si potrebbero "equipaggiare" i soccorritori o dei sensori in loco, per aumentare le capacità di connessione e comunicazione degli stessi (dove appunto il fattore tempo è fondamentale).
+
+Questo Modello, anche se basato su Server, può essere utilizzato senza un hosting, andando a designare una o più macchine per una rete "privata" di Nodi.
+
+Le possibilità sono infinite.
