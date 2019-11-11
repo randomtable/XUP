@@ -1,5 +1,4 @@
-# XUP
-## Xabal Universal Platform 3.0
+# XUP - Xabal Universal Platform 3.0
 
 La Piattaforma Universale Xabal nasce con lo scopo di fornire un'infrastruttura univoca e semplice da utilizzare in qualunque situazione, con qualunque dispositivo che abbia a disposizione una connessione ad una rete.
 
