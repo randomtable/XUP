@@ -36,3 +36,10 @@ Il Client HTML+Javascript è presente online qui:
 
 https://loremitalia.altervista.org/xabal.html
 
+Un esempio di Server è presente qui:
+
+https://loremitalia.altervista.org/xabal.php
+
+Dall'utilizzo dell'esempio online, si può notare come la chiamata POST sia inviata tramite del semplice Javascript, ed è sufficiente cambiare 
+
+Scaricando, invece, il sorgente in VB.NET si può notare come effettivamente il Codice sia ripetuto per ogni funzione, ed andrà a cambiare solo la stringa POSt passata al Server.
