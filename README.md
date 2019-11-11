@@ -18,3 +18,12 @@ Nel "Modello Xabal" il Server riceve una chiamata POST ed esegue la sanitizzazio
 
 Nella chiamata in ingresso deve essere presente il parametro "function"; tramite il parametro "function" il Server esegue la funzione oggetto della chiamata del Client.
 
+Nella chiamata, se necessario, saranno presenti altri parametri utili per la corretta elaborazione della funzione.
+
+Una volta eseguita la funzione, il Server deve restituire il risultato al Client (dal momento che in questo progetto il Server è stato programmato in PHP, la response verrà inviata dal Server tramite il comando "echo").
+
+E' possibile visualizzare nei sorgenti come è stato sviluppato il tutto.
+
+# Client
+
+Dal momento che 
