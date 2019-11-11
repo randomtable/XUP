@@ -105,4 +105,6 @@ Si potrebbero "equipaggiare" i soccorritori o dei sensori in loco, per aumentare
 
 Questo Modello, anche se basato su Server, può essere utilizzato senza un hosting, andando a designare una o più macchine per una rete "privata" di Nodi.
 
+Le funzioni che il Server mette a disposizione in questo progetto sono solo degli esempi per dare un esempio di implementazione; lo sviluppatore può programmare a proprio piacimento qualunque tipo di funzione e operazione, seguendo il Modello presente in questo progetto.
+
 Le possibilità sono infinite.
