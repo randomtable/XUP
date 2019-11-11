@@ -40,6 +40,18 @@ Un esempio di Server è presente qui:
 
 https://loremitalia.altervista.org/xabal.php
 
-Dall'utilizzo dell'esempio online, si può notare come la chiamata POST sia inviata tramite del semplice Javascript, ed è sufficiente cambiare 
+Dall'utilizzo dell'esempio online, si può notare come la chiamata POST sia inviata tramite del semplice Javascript.
 
-Scaricando, invece, il sorgente in VB.NET si può notare come effettivamente il Codice sia ripetuto per ogni funzione, ed andrà a cambiare solo la stringa POSt passata al Server.
+La response delle varie funzioni è visualizzata a fondo pagina, in un "div" specifico con id "xabalresult".
+  
+Come è possibile osservare, la chiamata non genera nessun tipo di post-back e la pagina non ha bisogno di ricaricarsi, andando a creare l'esperienza di navigazione come presente in librerie o framework più complessi come Angular o React.
+
+Scaricando, invece, il sorgente in VB.NET si può notare come effettivamente il Codice sia ripetuto per ogni funzione, ed andrà a cambiare solo la stringa POST passata al Server.
+
+Questo Modello, quindi, presenta molteplici vantaggi, tra i quali:
+
+- Utilizzo dei Servizi da parte di qualunque software o dispositivo che supporta chiamate POST
+- Possibilità di sviluppare di più, con meno codice
+- E' possibile utilizzare i linguaggi già conosciuti
+- Utilizzo delle risorse ridottissimo, rispetto ad altri tipi di Servizi Web.
+
