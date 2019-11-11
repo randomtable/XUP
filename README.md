@@ -4,8 +4,13 @@ La Piattaforma Universale Xabal nasce con lo scopo di fornire un'infrastruttura 
 
 Per raggiungere questo obiettivo, la Piattaforma è formata da un componente "server-side" (nel progetto corrente è presente il componente server "xabal.php") e un componente "client-side" (nel progetto corrente sono presenti due Client, uno è "xabal.html", l'altro Client è in VB.NET, il cui progetto compilabile con Visual Studio 2010 è presente nella cartella "XabalTest").
 
-Il Server è un Web Service, le cui funzioni possono essere consumate tramite semplici chiamate POST.
+Entriamo nel dettaglio:
 
-Questo tipo di scelta è stata presa osservando i vari linguaggi attualmente in circolazione, e gli attuali dispositivi.
+# Server
 
-Il primo problema che Xabal risolve è di tipo applicativo: il Client non ha bisogno di 
+Il Server di Xabal è un qualunque software in grado di ricevere ed elaborare chiamate POST.
+
+In questo progetto il Server è stato programmato in PHP per la sua diffusione e versatilità, ma può essere programmato in qualunque linguaggio, infatti è importante definire che:
+
+#### Xabal è un Modello, non un Software
+
