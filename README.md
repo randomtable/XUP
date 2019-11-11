@@ -73,3 +73,31 @@ Pertanto, la scelta del PHP serve anche a dotare lo sviluppatore di un vero e pr
 
 Lo sviluppatore potrebbe decidere di caricare un Nodo su un hosting e un ulteriore Nodo su un altro hosting, di modo da avere sempre una ridondanza del proprio applicativo.
 
+E' anche possibile per lo sviluppatore caricare due Server che eseguono operazioni differenti su due Server diversi, ed effettuare delle chiamate specifiche a seconda dell'operazione eseguita al momento dal Client.
+
+Questo Modello, in pratica, può trasformare un applicativo in una struttura "Cloud-like" in poco tempo, abbattendo sia i costi di sviluppo, sia i costi dell'infrastruttura.
+
+Un'ultima nota riguarda il perchè, per la trasmissione dei dati, si è scelta la chiamata POST pura e semplice.
+
+Il perchè è presto detto.
+
+In alcune situazioni non si hanno abbastanza risorse, banda o sistemi operativi che supportino dei Framework stratificati.
+
+Proprio in queste situazioni è necessario trasmettere l'informazione nel minor numero di byte possibili.
+
+Si pensi anche alle situazioni dove la connessione non è stabile ed è necessario trasmettere o elaborare informazioni in un tempo limitato.
+
+La struttura di esempio riportata in questo progetto (e in generale il Modello Xabal), prevede dei componenti software molto semplici da reperire ed installare (è possibile installare uno stack LAMP, ovvero Apache + PHP + MySQL anche su un semplice Raspberry Pi).
+
+Tali componenti non richiedono molte risorse (anche se dipende anche dall'applicazione) e hanno licenza libera (il tutto per rimanere in un'ottica di abbattimento dei costi).
+
+Questo tipo di possibilità permette di ampliare il concetto di "Cloud" o "Edge Computing" come lo conosciamo in un qualcosa che potremmo definire come un "AnyCloud" (è possibile ad esempio installare un server PHP anche su un telefono Android da 100 €) ovvero "tutto può far parte della Rete dei Nodi Xabal", andando concettualmente ad ampliare all'infinito le attuali possibilità di calcolo e distribuzione delle informazioni.
+
+Per spiegare meglio il concetto, prenderò come esempio due situazioni estreme.
+
+La prima è in una situazione di guerra.
+
+Si potrebbero progettare delle "tute intelligenti" (o "rendere intelligenti" le attuali), ognuna con il proprio Raspberry equipaggiato, che può sia elaborare e trasmettere dati, sia riceverne per avvisare ad esempio di una situazione di pericolo.
+
+Si pensi, inoltre, ad una eventuale calamità.
+
